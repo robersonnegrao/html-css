@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplemente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/foto-p.png" type="image/png"><!-- se não couber a "m" vai buscar a "p" -->
+        <source media="(max-width:1050px" srcset="imagens/foto-m.png" type="image/png"><!-- se não couber a foto-g com 1000px, vai buscar a foto-m -->
+        <img src="imagens/foto-g.png" alt="A imagem flexível funciona"><!-- carrega essa imagem por padrão -->
+    </picture>
+
+    <h1>Reproduzinho Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <!-- <audio src="midia/guanacast-33.mp3" controls></audio> --> 
+    <audio preload="metadata" autoplay controls loop><!-- "preload" indica se o áudio será pré-carregado ou não "loop" termina e começa sozinho tocar o arquivo "autoplay" não funcionou -->
+        <!-- preload "metadata" carrega apenas informações sobre o arq. "none" até que o usuário clique no play não carrrega nada. "auto" carrega todo o arq mesmo que o usuário não aperte o play -->
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav"><!-- muito pesado essa extensão. tentar não inserir -->
+        <p>Infelizmente seu nagevador não consegue reproduzir áudio.</p> <!-- caso não aceite nenhuma extensão -->
+        <p><a href="midia/guanacast-33.mp3">Clique aqui para baixar o arquivo MP3.</a></p>
+    </audio><!-- esta é outra forma de inserir áudios, mas tem que converter nessas extensões para uso em vários navegadores -->
+
+           
+</body>
+</html>

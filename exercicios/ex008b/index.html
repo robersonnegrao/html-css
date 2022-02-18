@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte / Pré-formatação</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript.</p><!-- code para mono espaçamento -->
+    <pre>
+        <code><!-- código em Python -->
+    num = int(input('Digite um número'))
+    if num % 2 == 0:
+        print(f'0 número {num} é PAR')
+    else:
+        print(f'0 número {num} é ÍMPAR')
+    print('Fim do programa')
+        </code>
+    </pre><!-- sem o pre, fica tudo numa linha só, sem indentação -->
+    <h2>Citações simples</h2>
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido.</q></p><!-- o "q" gera aspas para a citação -->
+    <h2>Citações completas</h2>
+    <p>Segundo Jeff Noble, no seu livro HTML para leigos:</p>
+    <blockquote cite="https://www.google.com.br/books/edition/HTML_XHTML_e_CSS_Para_Leigos/E8ZtDwAAQBAJ?hl=pt-BR&gbpv=1&dq=html&printsec=frontcover"><!-- essa citação da fonte não aparece visualmente, mas serve para os mecanismos de busca e direitos autorais -->
+        A diferença entre elementos inline e um bloco de textos é importante. Os elementos HTML neste capítulo descrevem os blocos de texto.
+    </blockquote>
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Languageabbr title">HTML</abbr> e <abbr title="Cascading Styke Sheets">CSS</abbr>. Estou adorando!</p><!-- quando passa o mouse por cima da sigla, aparece o popup com o significado na tela -->
+    <h2>Texto invertido</h2>
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo></p><!-- não sabemos para que serve. rtl=right to left ou ao contrário, que sai escrita normal -->
+
+</body>
+</html>

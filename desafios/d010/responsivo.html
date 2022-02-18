@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Reponsividade</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+        main {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            /* width: 800px; não fica responsivo, pois quebra a imagem e o texto, acrescentando barra de rolagem */
+            margin: auto; /* conteúdo alinhado ao centro */
+            min-width: 280px; /* tamanho mínimo para celulares mais antigos com ele em pé */
+            max-width: 800px; /* tamanho máximo que ficou bom no viewport do window risider */
+        }
+        img {
+            width: 100%; /* incluído porque a imagem quebrava quando arrastava com os 320 x 800 acima */
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando Responsividade</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, sunt impedit. Recusandae sit molestias est repellendus omnis laborum corrupti rem sapiente consequatur, ab assumenda! Maiores fugit sint dolorem assumenda dolorum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit deleniti ratione quae provident tenetur ipsum non maiores mollitia, ea minus iste commodi explicabo corrupti illo quo voluptates quisquam placeat! Dicta! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus rem minus voluptates architecto eum nihil quia ad, nulla aperiam quaerat eligendi debitis fugit accusantium natus, facilis quis eveniet eos odio.</p>
+        <picture>
+            <source media="(max-width: 600px)" srcset="imagens/irina-blok-pq.jpg"> <!-- essa picture com source foi incluída para quando a tela ficar menor aparecer essa outra foto pequena -->
+            <img src="imagens/irina-blok.jpg" alt="Irina Blok">
+        </picture>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, sunt impedit. Recusandae sit molestias est repellendus omnis laborum corrupti rem sapiente consequatur, ab assumenda! Maiores fugit sint dolorem assumenda dolorum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit deleniti ratione quae provident tenetur ipsum non maiores mollitia, ea minus iste commodi explicabo corrupti illo quo voluptates quisquam placeat! Dicta! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus rem minus voluptates architecto eum nihil quia ad, nulla aperiam quaerat eligendi debitis fugit accusantium natus, facilis quis eveniet eos odio.</p>
+    </main>
+</body>
+</html>
