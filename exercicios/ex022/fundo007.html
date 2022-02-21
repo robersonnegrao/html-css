@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        #container {
+            background-image: url('imagens/target001.png'); /* incluido para posicionamento do retangulo */
+            background-size: 100% 100%; /* incluido para posicionamento do retangulo */
+            position: relative;
+            height: 94vh; /* trocado 200px por 96vh viewport height para preencher tudo verticalmente, sem barra de rolagem */
+            padding: 10px;
+            background-color: purple;
+        } /* pode-se declarar com ou sem a section antes da # */
+        #conteudo {
+            background-image: url('imagens/target001.png'); /* incluido para posicionamento do retangulo */
+            background-size: 100% 100%; /* incluido para posicionamento do retangulo */
+            position: absolute;
+            height: 200px; 
+            width: 400px;
+            background-color: yellow;
+            /* margin: auto; /* centralização horizontal */
+
+            /* left: 450px;
+            top: 170px; ASSIM FICOU NO MEIO, MAS NÃO RESPONSIVO */
+
+            left: 50%;
+            top: 50%; /* quando aplicado esses 2, realmente ficou com 50% partindo do left top, esquerda superior */
+
+            transform: translate(-50%, -50%); /* centraliza vertical e horizontalmente em relação ao container, com responsividade */
+
+        } /* pode-se declarar com ou sem o article antes da # */
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
