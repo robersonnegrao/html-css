@@ -4,20 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body {
             height: 100vh; /*  altura da view port (janela), tela inteira  */
-            background-color: black;
+            /* background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center; /* centralizado. arrastando, sempre fica no meio */
-            background-repeat: no-repeat;
-            background-size: cover; /* cobre a tela inteira, mesmo que tenha que picotar a img, mas não aparece as barras pretas nas laterais e acima e abaixo como no backgraound-size: contain e auto */
+            /* background-repeat: no-repeat; /* como incluimos vários parágrafos ao texto abaixo a imagem de fundo ficou menor e portanto aparece o fundo preto no final da imagem; assim, alteramos aqui para repeat-y, daí repete a imagem e não aparece o preto do fundo. COM AS DECLARAÇÕES COVER E FIXED NÃO PRECISA MAIS DEIXAR REPEAT-Y */
+            /* background-size: cover; /* cobre a tela inteira, mesmo que tenha que picotar a img, mas não aparece as barras pretas nas laterais e acima e abaixo como no backgraound-size: contain e auto */
+            /* background-attachment: fixed; /* mantem a img de fundo fixa eqto o conteúdo pode ser rolado. JUNTO COM O COVER ACIMA, FICA PERFEITO PARA RESPONSIVIDADE */
+            
+            /* SHORTHAND PARA BACKGRAOUND: color > image > position > repeat > size > attachment. MESMO QUE A DOCUMENTAÇÃO DO W3C DIGA QUE FUNCIONA, O SIZE NÃO É SUPORTADO NOS NAVEGADORES; ENTÃO DEVE-SE RETIRÁ-LO DO SHORTHAND E INCLUIR SEPARAMENTE  */
+
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 700px; /* trocamos width por max-widht */
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -28,6 +34,11 @@
 <body>
     <main>
         <h1>Teste de Imagem de Fundo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, perferendis et quibusdam dolores, esse, nesciunt voluptatem quidem recusandae ab quae obcaecati repellendus officia amet at laborum. Ducimus neque enim pariatur! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis accusamus sit excepturi in exercitationem explicabo non, asperiores quo, inventore eos dolorum repellendus, distinctio laudantium? Neque minima eum recusandae nulla! Consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sapiente numquam itaque repellendus eum aliquid, totam fugit quia deleniti officiis dolorem impedit exercitationem fuga eveniet beatae labore, in temporibus necessitatibus!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, perferendis et quibusdam dolores, esse, nesciunt voluptatem quidem recusandae ab quae obcaecati repellendus officia amet at laborum. Ducimus neque enim pariatur! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis accusamus sit excepturi in exercitationem explicabo non, asperiores quo, inventore eos dolorum repellendus, distinctio laudantium? Neque minima eum recusandae nulla! Consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sapiente numquam itaque repellendus eum aliquid, totam fugit quia deleniti officiis dolorem impedit exercitationem fuga eveniet beatae labore, in temporibus necessitatibus!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, perferendis et quibusdam dolores, esse, nesciunt voluptatem quidem recusandae ab quae obcaecati repellendus officia amet at laborum. Ducimus neque enim pariatur! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis accusamus sit excepturi in exercitationem explicabo non, asperiores quo, inventore eos dolorum repellendus, distinctio laudantium? Neque minima eum recusandae nulla! Consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sapiente numquam itaque repellendus eum aliquid, totam fugit quia deleniti officiis dolorem impedit exercitationem fuga eveniet beatae labore, in temporibus necessitatibus!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, perferendis et quibusdam dolores, esse, nesciunt voluptatem quidem recusandae ab quae obcaecati repellendus officia amet at laborum. Ducimus neque enim pariatur! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis accusamus sit excepturi in exercitationem explicabo non, asperiores quo, inventore eos dolorum repellendus, distinctio laudantium? Neque minima eum recusandae nulla! Consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sapiente numquam itaque repellendus eum aliquid, totam fugit quia deleniti officiis dolorem impedit exercitationem fuga eveniet beatae labore, in temporibus necessitatibus!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, perferendis et quibusdam dolores, esse, nesciunt voluptatem quidem recusandae ab quae obcaecati repellendus officia amet at laborum. Ducimus neque enim pariatur! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis accusamus sit excepturi in exercitationem explicabo non, asperiores quo, inventore eos dolorum repellendus, distinctio laudantium? Neque minima eum recusandae nulla! Consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sapiente numquam itaque repellendus eum aliquid, totam fugit quia deleniti officiis dolorem impedit exercitationem fuga eveniet beatae labore, in temporibus necessitatibus!</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, perferendis et quibusdam dolores, esse, nesciunt voluptatem quidem recusandae ab quae obcaecati repellendus officia amet at laborum. Ducimus neque enim pariatur! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis accusamus sit excepturi in exercitationem explicabo non, asperiores quo, inventore eos dolorum repellendus, distinctio laudantium? Neque minima eum recusandae nulla! Consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sapiente numquam itaque repellendus eum aliquid, totam fugit quia deleniti officiis dolorem impedit exercitationem fuga eveniet beatae labore, in temporibus necessitatibus!</p>
     </main>
 </body>
