@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+} /* tira espaços sobre e nas laterais do header */
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    /* text-transform: uppercase; para todoas as letras em maiscúlo  */
+    font-variant: small-caps;
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+a {
+    color: white; /* tirar o azul padrão */
+    text-decoration: none; /* tirar sublinhado padrão */
+    font-weight: bolder; /* negrito */
+} /* inclui o header e o footer, ou pode ser: header a {} e footer a {} */
+
+a:hover {
+    text-decoration: underline;
+} /* inclui o header e o footer, ou pode ser: header a:hover {} e footer a:hover {} */
+
+section {
+    padding-top: 10vh; /* 10% da altura da tela */
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(51, 51, 51);
+    color: white;
+}
+
+section.imagem > p {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.253);
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
