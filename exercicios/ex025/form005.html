@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+    <fieldset>
+        <legend>Sexo</legend>
+        <input type="radio" name="sexo" id="isxmas" value="M"> <label for="isxmas">Masculino</label>
+        <input type="radio" name="sexo" id="isxfem" value="F"> <label for="isxfem">Femenino</label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Espportes Favoritos</legend>
+        <input type="checkbox" name="esbas" id="iesbas"> <label for="iesbas">Basquete</label>
+        <input type="checkbox" name="esfut" id="iesfut" checked> <label for="iesfut">Futebol</label> 
+        <input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat">Natação</label>
+        <input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tênis</label>
+    </fieldset>
+    <!-- CHECKED serve para o item já aparecer selecionado. Caso da pergunta se quer receber e-mail, se não desmarcar, vai receber -->
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+    </form>
+</body>
+</html>
